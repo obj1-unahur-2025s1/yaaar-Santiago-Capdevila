@@ -157,7 +157,6 @@ class ConvertirseEnLeyenda inherits Mision{
 
 class Saqueo inherits Mision{
   // Constantes
-  const property cantidadDeMonedas
   // Obejtivos: barco o ciudad
   const property objetivo
 
@@ -168,8 +167,10 @@ class Saqueo inherits Mision{
 
   // Método para saber si una misión pueda ser realizada por un barco
   method requerimientosDelBarco(unBarco) = objetivo.esVulnerable(unBarco)
+
 }
 
+//
 object cantidadDeMonedas {
   var property valor = 0
 }
